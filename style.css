@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Сброс отступов и базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Удобный размер шрифта и высота строки */
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+/* Основные теги */
+body {
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    background-color: #fff;
+    color: #222;
+}
+
+/* Заголовки без дефолтных margin */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* Убираем маркеры у списков */
+ul, ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Ссылки */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Картинки */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Формы */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* Таблицы */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.container {
+    width: 1052px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 240px;
+    height: 60px;
+    background: #e05100; 
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: filter 0.4s ease, box-shadow 0.3s ease, transform 0.4s ease;
+}
+
+.button:hover {
+    filter: brightness(0.7);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+}
+/*  */
+/*!--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.header_information {
+    background: #404040;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.header_information_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_information_content li {
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+}
+
+.header_information_span {
+    display: block;
+    width: 2px;
+    height: 45px;
+    background-color: #fff;
+}
+
+.header_button {
+    background: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000;
+}
+
+
+.header_menu {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    padding: 12px 67px 12px 0;
+}
+
+.header_menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_menu li {
+    font-weight: 700;
+    font-size: 12px;
+    color: #000;
+    transition: color 0.4 ease, transform 0.3s ease;
+}
+
+
+.header_menu li:not(:first-child) {
+    padding-left: 50px;
+}
+
+.header_menu li:hover {
+    color: #757575;
+    transform: translateY(-2px);
+}
+
+
+.welcom {
+    height: 532px;
+    background-image: url(images/welcom_tile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.welcom_content {
+    text-align: center;
+}
+
+.welcom_content_title {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    padding-top: 135px;
+}
+
+.welcom_content_subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.welcom_button {
+    margin: 32px auto 0 auto;
+}
+
+
+
+.catalog {
+    padding-top: 120px;
+}
+
+.catalog_title {
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    color: #000;
+}
+
+.catalog_grup {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 264px);
+    gap: 30px;
+    padding-top: 56px;
+}
+
+.catalog_grup_card {
+    border-radius: 30px;
+    width: 240px;
+    height: 264px;
+    box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.25);
+    background: #fff;
+    text-align: center;
+}
+
+.catalog_grup_card img {
+    padding: 60px 31px 0 31px;
+}
+
+.catalog_grup_text {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+    padding-top: 44px;
+}
+
+
+
+
+.about-us {
+    width: 1600px;
+    height: 748px;
+    display: flex;
+    justify-content: left;
+    background: #404040;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.about-us img {
+    width: 748px;
+    height: 748px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.about-us_content {
+    padding-left: 67px;
+}
+
+.about-us_content_title {
+    font-weight: 700;
+    font-size: 35px;
+    color: #fff;
+    padding-top: 120px;
+}
+
+.about-us_content_subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    padding-top: 80px;
+}
+
+.about-us_content_text {
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    padding-top: 31px;
+}
+
+.about-us_content_button {
+    margin-top: 20px;
+    color: #fff;
+}
+
+
+.products {
+    padding-top: 120px;
+}
+
+.products_title {
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    color: #000;
+}
+
+.products_grup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 349px);
+    column-gap: 30px;
+    row-gap: 17px;
+    padding-top: 80px;
+}
+
+.products_grup_card {
+    display: flex;
+    border-radius: 30px;
+    width: 510px;
+    height: 349px;
+    box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.25);
+    background: #fff;
+}
+
+.products_card_information {
+    padding: 20px 24px 0 23px;
+}
+
+.products_information_title {
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+    padding-top: 27px;
+}
+
+.products_information_text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    padding-top: 12px;
+}
+
+.products_information_color {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.products_information_color span {
+    display: block;
+    width: 14px;
+    height: 16px;
+
+}
+
+.products_information_grey {
+    background: #737373;
+}
+
+.products_information_red {
+    background: #9c0909;
+}
+
+.products_information_yellow {
+    background: #d48d37;
+}
+
+.products_information_brown {
+    background: #964b00;
+}
+
+.products_information_pink {
+    background: #dc143c;;
+}
+
+.products_information_dark-gray {
+    background:  #49423d;
+}
+
+.products_information_orange {
+    background:  #d77d31;
+}
+
+.products_information_black {
+    background:  #000;
+}
+
+.products_card_prais {
+    background: #404040;
+    border-radius: 0 30px 30px 0;
+    width: 180px;
+    height: 349px;
+}
+
+.products_prais_grup {
+    padding: 20px 0 0 23px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 25px;
+}
+
+.products_color_title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 149%;
+    color: #fff;
+}
+
+.products_color_subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 149%;
+    color: #fff;
+}
+
+.products_prais_favorites {
+    width: 69px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 111px;
+    background: #E05100;
+    border-radius: 30px 0 30px 0;
+}
+
+.products_prais_favorites:hover {
+    transform: translateY(0);
+}
+
+
+
+.industry {
+    height: 766px;
+    background: #404040;
+    margin-top: 120px;
+}
+
+.industry_title {
+    padding-top: 120px;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+}
+
+.industry_content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+}
+
+.industry_progress_logo {
+    border-radius: 30px;
+    width: 231px;
+    height: 74px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.industry_progress_grup {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    padding-top: 53px;
+}
+
+.industry_progress_dignity {
+    display: flex;
+    align-items: center;
+}
+
+.industry_progress_text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 30px;
+}
+
+
+
+.work_title {
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    color: #000;
+    padding-top: 120px;
+}
+
+.work_subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #000;
+    padding-top: 80px;
+}
+
+.work_grup {
+    padding-top: 78px;
+}
+
+.work_grup_top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 40px;
+}
+
+.work_grup_bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 40px 180px 0 180px;
+}
+
+.work_grup_card img{
+    border-radius: 30px;
+    width: 330px;
+    height: 274px;
+}
+
+
+
+
+.advantages {
+    height: 1059px;
+    background: #404040;
+    margin-top: 118px;
+}
+
+.advantages_title {
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+    padding-top: 122px;
+}
+
+.advantages_grup {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 50px;
+    padding-top: 80px;
+}
+
+.advantages_grup_card {
+    border-radius: 30px;
+    width: 330px;
+    height: 323px;
+    box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.25);
+    background: #fff;
+}
+
+.advantages_grup_card img {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 14px;
+}
+
+.advantages_card_title {
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+    padding: 30px 0 0 28px;
+}
+
+.advantages_card_text {
+    width: 272px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    padding: 15px 0 0 28px;
+    line-height: 17px;
+}
+
+
+
+.footer_menu {
+    display: grid;
+    grid-template-columns: 540px repeat(3, 194px);
+    padding-top: 62px;
+}
+
+.footer_menu li {
+    display: flex;
+    padding-bottom: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+}
+
+.footer_menu li.footer_menu_title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #e05100;
+    padding-bottom: 20px;
+}
+
+.footer_menu img {
+    padding-right: 20px;
+}
+
+.footer_bottom {
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+
